@@ -20,7 +20,16 @@ export default [
           },
           {
             label: "Connection 1.1.2",
-            connections: [],
+            connections: [
+              {
+                label: "Connection 1.1.2.1",
+                connections: [],
+              },
+              {
+                label: "Connection 1.1.2.2",
+                connections: [],
+              },
+            ],
           },
         ],
       },

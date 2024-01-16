@@ -16,38 +16,8 @@ function Connection({ label, connections }) {
 }
 
 function App() {
-  return (
-    <div class={styles.frame}>
-      {connections.map(Connection)}
-      {/* <div class={styles.box}>
-        <p>Connection 1</p>
-
-        <div class={styles.row}>
-          <div class={styles.box}>
-            <p>Connection 1.1</p>
-          </div>
-          <div class={styles.box}>
-            <p>Connection 1.2</p>
-          </div>
-          <div class={styles.box}>
-            <p>Connection 1.3</p>
-          </div>
-        </div>
-      </div>
-      <div class={styles.box}>
-        <p>Connection 2</p>
-        <div class={styles.box}>
-          <p>Connection 2.1</p>
-        </div>
-      </div>
-      <div class={styles.box}>
-        <p>Connection 3</p>
-        <div class={styles.box}>
-          <p>Connection 3.1</p>
-        </div>
-      </div> */}
-    </div>
-  );
+  // It is pretty cool that routes are like a tree and can be perfectly mirrored in the HTML structure
+  return <div class={styles.frame}>{connections.map(Connection)}</div>;
 }
 
 export default App;

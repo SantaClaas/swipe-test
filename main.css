@@ -1,41 +1,31 @@
-/* body > div {
-  height: 60rem;
-  width: 20rem;
-  background-color: #aaa;
-  margin-block: auto;
-  margin-inline: auto;
-
-  & div {
-    height: 20rem;
-    width: 90%;
-    background-color: #fff;
-  }
-} */
-
 .frame {
   height: 60rem;
   width: 20rem;
-  background-color: #aaa;
+  background-color: rgba(0, 0, 0, 0.1);
   margin-inline: auto;
   padding: 1rem;
   display: flex;
-  flex-direction: column;
   gap: 1rem;
-}
-
-.box {
-  height: 20rem;
-  width: 20rem;
-  background-color: #bbb;
-  flex-shrink: 0;
+  overflow-x: auto;
 }
 
 .row {
   display: flex;
   gap: 1rem;
-  width: 100%;
   overflow-x: auto;
 }
+
+.box {
+  height: 20rem;
+  width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/*
+
 
 #middle-row .box {
   background-color: #ccc;
@@ -45,4 +35,4 @@
 #top-row .box {
   background-color: #ddd;
   width: 60rem;
-}
+} */
